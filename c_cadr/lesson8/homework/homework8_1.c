@@ -23,19 +23,21 @@ int main(int argc, char** argv) {
     int total_wc = 0; 
 
     while ((wc = getchar()) != EOF) {
+	
 	if (wc > '0' && wc < '9') {
 	    ++digits_wc;
 	} else if ((wc >= 'a' && wc <= 'z') || (wc >= 'A' && wc <= 'Z')) {
 	    ++chars_wc;
 	} else if (wc == ' ') {
 	    ++space_wc;
-	}else if (wc == '\t') {
+	} else if (wc == '\t') {
 	    ++tabs_wc;
 	} else if (wc == '\n') {
 	    ++newline_wc;
 	} else {
 	    ++other_wc;
 	}
+	
 	if (wc == ' ' || wc == '\n' || wc == '\t') {
 	    state = OUT;
 	} else if (state == OUT) {
