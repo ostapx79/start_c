@@ -1,6 +1,6 @@
 /* Изменить программу так, чтобы если t > 30, то программа кроме www123
  * напечатала еще какие-нибудь 3 символа и значение переменной t.
- * start_c/begin_c/lesson3/homework/homework3_2.c
+ * start_c/c_begin/lesson3/homework/homework3_2.c
  */
 #include <stdio.h>
 

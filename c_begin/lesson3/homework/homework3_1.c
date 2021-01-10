@@ -1,7 +1,7 @@
 /* Изменить программу так, чтобы если условия если условия t > 10, не
  * выполняется т.е. ложное. Но программа кроме вывода ggg завершилась с
  * результатом 7.
- * start_c/begin_c/lesson3/homework/homework3_1.c
+ * start_c/c_begin/lesson3/homework/homework3_1.c
  */
 #include <stdio.h>
 
