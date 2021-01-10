@@ -1,5 +1,5 @@
 /* Условные операторы 
- * start_c/begin_c/lesson3/lesson3_1.c
+ * start_c/c_begin/lesson3/lesson3_1.c
  */
 #include <stdio.h>
 
