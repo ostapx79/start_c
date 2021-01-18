@@ -11,5 +11,11 @@ int main() {
         numb++;
     } while (numb <= 10);
 
+    int numb_a;
+    do {
+        printf("%d\n", numb_a);
+        scanf("%d", &numb_a);
+    } while (numb_a != 7);
+
     return 0;
 }
