@@ -7,7 +7,10 @@
 
 int main() {
     char map[11][26];
-    // int i;
+    int dog_x = 12;
+    int dog_y = 5;
+    int apple_x = 3;
+    int apple_y = 3;
 
     sprintf(map[0], "#########################");
 
@@ -15,6 +18,9 @@ int main() {
         sprintf(map[i], "#                       #");
 
     sprintf(map[9], "#########################");
+
+    map[dog_y][dog_x] = '@';
+    map[apple_y][apple_x] = '*';
 
     for (int i = 0; i < 11; i++)
         printf("%s\n", map[i]);
