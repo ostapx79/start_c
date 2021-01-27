@@ -26,6 +26,7 @@ int main() {
     int apple_x = 3;
     int apple_y = 3;
     char key;
+    int wall_x, wall_y;
 
     do {
         sprintf(map[0], "#########################");
@@ -35,8 +36,8 @@ int main() {
 
         sprintf(map[9], "#########################");
 
-        map[dog_y][dog_x] = '@';
         map[apple_y][apple_x] = '*';
+        map[dog_y][dog_x] = '@';
 
         system("clear");
 
@@ -45,10 +46,18 @@ int main() {
 
         key = mygetch();
 
+        wall_y = dog_y;
+        wall_x = dog_x;
+
         if (key == 'k') dog_y--; // вверх
         if (key == 'j') dog_y++; // вниз
         if (key == 'h') dog_x--; // вправо
         if (key == 'l') dog_x++; // влево
+
+        if (map[dog_y][dog_x] == '#') {
+            dog_y = wall_y;
+            dog_x = wall_x;
+        }
 
     } while (key != 'e');
     return 0;
