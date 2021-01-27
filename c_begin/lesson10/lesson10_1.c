@@ -45,13 +45,12 @@ int main() {
         for (int i = 0; i < 11; i++)
             printf("%s\n", map[i]);
 
-        // printf("%s", &key);
         key = mygetch();
 
-        if (key == 'w') dog_y--;
-        if (key == 's') dog_y++;
-        if (key == 'a') dog_x--;
-        if (key == 'd') dog_x++;
+        if (key == 'k') dog_y--;
+        if (key == 'j') dog_y++;
+        if (key == 'h') dog_x--;
+        if (key == 'l') dog_x++;
 
     } while (key != 'e');
     return 0;
