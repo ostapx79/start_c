@@ -47,10 +47,10 @@ int main() {
 
         key = mygetch();
 
-        if (key == 'k') dog_y--;
-        if (key == 'j') dog_y++;
-        if (key == 'h') dog_x--;
-        if (key == 'l') dog_x++;
+        if (key == 'k') dog_y--; // вверх
+        if (key == 'j') dog_y++; // вниз
+        if (key == 'h') dog_x--; // вправо
+        if (key == 'l') dog_x++; // влево
 
     } while (key != 'e');
     return 0;
