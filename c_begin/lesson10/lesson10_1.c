@@ -48,6 +48,7 @@ int main() {
 
         for (int i = 0; i < 11; i++)
             printf("%s\n", map[i]);
+        printf("Сколько яблок с ел собака -> %d\n", count);
 
         key = mygetch();
 
@@ -78,8 +79,6 @@ int main() {
         }
 
     } while (key != 'e');
-
-    printf("Сколько яблок с ел собака -> %d\n", count);
 
     return 0;
 }
