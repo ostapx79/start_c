@@ -69,12 +69,14 @@ int main() {
         wall_a_x = apple_x;
 
         if ((dog_y == apple_y) && (dog_x == apple_x)) {
-            apple_y = rand() * 1. / RAND_MAX * 9 + 1;
-            apple_x = rand() * 1. / RAND_MAX * 22 + 1;
-            if (map[apple_y][apple_x] == '#') {
-                apple_y = wall_a_y;
-                apple_x = wall_a_x;
-            }
+            apple_y = 1 + rand() % (9 - 1);
+            apple_x = 1 + rand() % (24 - 1);
+//            apple_y = rand() * 1. / RAND_MAX * 11 - 2;
+//            apple_x = rand() * 1. / RAND_MAX * 26 - 2;
+//            if (map[apple_y][apple_x] == '#') {
+//                apple_y = wall_a_y;
+//                apple_x = wall_a_x;
+//            }
             count++;
         }
 
